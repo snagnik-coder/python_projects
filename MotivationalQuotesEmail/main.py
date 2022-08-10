@@ -3,8 +3,8 @@ import smtplib
 # from random import choice
 
 my_email = "snagnikdas2001@gmail.com"
-password = "tr01sd07"
-quote_for_today = "Visit: https://drive.google.com/file/d/1uXQvJvot32uUNTAvrTLgznLoAiIWewSe/view?usp=sharing"
+password = "secret"
+quote_for_today = "secret"
 
 # weekdays = ["Monday", "Tuesday", "wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
@@ -19,7 +19,7 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.login(user = my_email, password = password)
     connection.sendmail(
         from_addr = my_email, 
-        to_addrs = "1929251@kiit.ac.in", 
-        msg = f"Subject: Dekho goo, naile kutu demu\n\n{quote_for_today}")
+        to_addrs = "secret", 
+        msg = "whatever"
 
 
